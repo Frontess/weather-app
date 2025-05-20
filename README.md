@@ -24,7 +24,7 @@
 
 ### 🔹 Клонируем репозиторий:  
 ```bash
-git clone https://github.com/ВашНикнейм/weather-app.git
+git clone https://github.com/frontess/weather-app.git
 cd weather-app
 ```
 
