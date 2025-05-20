@@ -1,0 +1,107 @@
+/* Общие стили для body, применимые к обеим страницам */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Добавлен цвет текста для body */
+}
+
+/* Стили для контейнера входа */
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+/* Стили для кнопки входа (синяя) */
+.login-container button {
+  /* Уточнено для избежания конфликтов */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Адаптивность для контейнера входа */
+@media (max-width: 400px) {
+  .login-container {
+    padding: 20px;
+  }
+}
+
+/* Стили для контейнера погоды */
+.weather-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px; /* Увеличена максимальная ширина для погоды */
+  text-align: center;
+}
+.weather-container h2 {
+  margin-bottom: 20px;
+  color: #007bff; /* Синий заголовок для погоды */
+}
+.weather-container p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Стили для кнопки выхода (красная) */
+.weather-container button {
+  /* Уточнено для избежания конфликтов */
+  padding: 10px;
+  background-color: #dc3545; /* Красная кнопка для "Выйти" */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Отступ сверху для кнопки */
+}
+.weather-container button:hover {
+  background-color: #c82333;
+}
+
+/* Адаптивность для контейнера погоды */
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 20px;
+  }
+}
