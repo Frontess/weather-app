@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Простое веб-приложение для отображения погоды с авторизацией пользователя, разработанное по ТЗ.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "http-server public -o",
+    "build": "echo 'Для этого простого статического сайта папка public/ уже является готовой сборкой.'",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "weather",
+    "auth",
+    "javascript",
+    "html",
+    "css",
+    "frontend",
+    "reqres",
+    "openweathermap"
+  ],
+  "author": "frontess",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
+  }
+}
